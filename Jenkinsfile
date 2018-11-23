@@ -3,8 +3,9 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                sh 'cat Jenkinsfile'
                 echo 'ta aqui'
+                sh 'ls -la'
+                sh 'cat Jenkinsfile'
                 sh 'mvn clean package'
             }
             post {
