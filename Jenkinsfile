@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                bat 'mvn Clean package_jenkinsfile'
+                bat 'mvn clean package_jenkinsfile'
             }
             post {
                 success {
